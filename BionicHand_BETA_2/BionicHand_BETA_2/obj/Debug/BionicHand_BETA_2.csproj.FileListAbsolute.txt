@@ -1,0 +1,13 @@
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.csprojAssemblyReference.cache
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.Form1.resources
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.Properties.Resources.resources
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.csproj.GenerateResource.cache
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.csproj.CoreCompileInputs.cache
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\bin\Debug\BionicHand_BETA_2.exe.config
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\bin\Debug\BionicHand_BETA_2.exe
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\bin\Debug\BionicHand_BETA_2.pdb
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.exe
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.pdb
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.Form2.resources
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.Form3.resources
+C:\Users\JNamyslo\Desktop\BionicHand_BETA_2\BionicHand_BETA_2\obj\Debug\BionicHand_BETA_2.Form4.resources
