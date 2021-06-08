@@ -32,6 +32,7 @@ namespace BionicHand_BETA_2
             // #2. Set second form's size
             form2.Width = this.Width;
             form2.Height = this.Height;
+            //Testkommentar
 
             // #3. Set second form's start position as same as parent form
             form2.StartPosition = FormStartPosition.Manual;
