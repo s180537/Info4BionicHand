@@ -136,7 +136,17 @@ namespace BionicHand_BETA_2
                 dataSensor4 = serialDataIn.Substring(indexofC + 1, (indexofD - indexofC) - 1);
                 dataSensor5 = serialDataIn.Substring(indexofD + 1, (indexofE - indexofD) - 1);
 
+                textBox_sensor1.Text = dataSensor1;
+                textBox_sensor2.Text = dataSensor2;
+                textBox_sensor3.Text = dataSensor3;
+                textBox_sensor4.Text = dataSensor4;
+                textBox_sensor5.Text = dataSensor5;
 
+                verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
+                verticalProgressBar1_sensor2.Value = Convert.ToInt16(dataSensor2);
+                verticalProgressBar1_sensor3.Value = Convert.ToInt16(dataSensor3);
+                verticalProgressBar1_sensor4.Value = Convert.ToInt16(dataSensor4);
+                verticalProgressBar1_sensor5.Value = Convert.ToInt16(dataSensor5);
             }
             catch (Exception error)
             {
