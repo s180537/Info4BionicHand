@@ -39,27 +39,6 @@ namespace BionicHand_BETA_2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form3 form3 = new Form3();
-
-            // #2. Set second form's size
-            form3.Width = this.Width;
-            form3.Height = this.Height;
-
-            // #3. Set second form's start position as same as parent form
-            form3.StartPosition = FormStartPosition.Manual;
-            form3.Location = new Point(this.Location.X, this.Location.Y);
-
-            // #4. Set parent form's visible to false
-            this.Visible = false;
-
-            // #5. Open second dialog
-            form3.ShowDialog();
-
-            // #6. Set parent form's visible to true
-            this.Visible = true;
-        }
 
         private void comboBox_COMPORT_DropDown(object sender, EventArgs e)
         {
@@ -143,10 +122,10 @@ namespace BionicHand_BETA_2
                 textBox_sensor5.Text = dataSensor5;
 
                 verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
-                verticalProgressBar1_sensor2.Value = Convert.ToInt16(dataSensor2);
-                verticalProgressBar1_sensor3.Value = Convert.ToInt16(dataSensor3);
-                verticalProgressBar1_sensor4.Value = Convert.ToInt16(dataSensor4);
-                verticalProgressBar1_sensor5.Value = Convert.ToInt16(dataSensor5);
+                verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
+                verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
+                verticalProgressBar4_sensor4.Value = Convert.ToInt16(dataSensor4);
+                verticalProgressBar5_sensor5.Value = Convert.ToInt16(dataSensor5);
             }
             catch (Exception error)
             {
