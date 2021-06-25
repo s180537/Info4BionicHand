@@ -8,6 +8,10 @@ void setup() {
     pinMode(A1, OUTPUT);
     pinMode(A2, OUTPUT);
     pinMode(A3, OUTPUT);
+    dataSensor1 = 1;
+    dataSensor2 = 1;
+    dataSensor3 = 1;
+    dataSensor4 = 1;
 }
 
 void loop() {

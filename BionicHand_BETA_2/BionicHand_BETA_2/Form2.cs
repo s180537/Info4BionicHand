@@ -125,11 +125,11 @@ namespace BionicHand_BETA_2
                 textBox_sensor4.Text = dataSensor4;
                 textBox_sensor5.Text = dataSensor5;
 
-                verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
-                verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
-                verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
-                verticalProgressBar4_sensor4.Value = Convert.ToInt16(dataSensor4);
-                verticalProgressBar5_sensor5.Value = Convert.ToInt16(dataSensor5);
+                //verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
+                //verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
+                //verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
+                //verticalProgressBar4_sensor4.Value = Convert.ToInt16(dataSensor4);
+                //verticalProgressBar5_sensor5.Value = Convert.ToInt16(dataSensor5);
             }
             catch (Exception error)
             {
