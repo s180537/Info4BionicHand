@@ -3,7 +3,7 @@ uint16_t dataSensor1, dataSensor2, dataSensor3, dataSensor4;
 
 void setup() {
   // put your setup code here, to run once:
-    Serial.begin(115200);
+    Serial.begin(9600);
     pinMode(A0, OUTPUT);
     pinMode(A1, OUTPUT);
     pinMode(A2, OUTPUT);
