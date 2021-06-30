@@ -17,9 +17,9 @@ namespace BionicHand_BETA_2
 {
     public partial class Form2 : Form
     {
-        string serialDataIn;
-        sbyte indexofA, indexofB, indexofC, indexofD, indexofE;
-        string dataSensor1, dataSensor2, dataSensor3, dataSensor4, dataSensor5;
+        string serialDataIn = "0A0B0C0D";
+        sbyte indexofA = 1, indexofB = 1, indexofC = 1, indexofD = 1, indexofE = 1;
+        string dataSensor1 = "1", dataSensor2 = "1", dataSensor3 = "1", dataSensor4 = "1", dataSensor5 = "1";
         public Form2()
         {
             InitializeComponent();
@@ -99,8 +99,15 @@ namespace BionicHand_BETA_2
 
         public void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            serialDataIn = serialPort1.ReadLine();
-            this.BeginInvoke(new EventHandler(ProcessData));
+            if (serialPort1.ReadLine().Length == 8)
+            {
+                serialDataIn = serialPort1.ReadLine();
+                this.BeginInvoke(new EventHandler(ProcessData));
+            }
+            else
+            {
+                serialDataIn = "50A50B50C50D";
+            }
         }
 
         public void ProcessData(object sender, EventArgs e)
