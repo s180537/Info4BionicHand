@@ -1,21 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
+/*
+ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+*/
 using System.IO.Ports;
-using System.Linq;
+/*
+ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+*/
 using System.Windows.Forms;
 
 namespace BionicHand_BETA_2
 {
     public partial class Form2 : Form
     {
-        string serialDataIn;
-        sbyte indexofA, indexofB, indexofC, indexofD, indexofE;
-        string dataSensor1, dataSensor2, dataSensor3, dataSensor4, dataSensor5;
+        string serialDataIn = "0A0B0C0D";
+        sbyte indexofA = 1, indexofB = 1, indexofC = 1, indexofD = 1, indexofE = 1;
+        string dataSensor1 = "1", dataSensor2 = "1", dataSensor3 = "1", dataSensor4 = "1", dataSensor5 = "1";
         public Form2()
         {
             InitializeComponent();
@@ -39,27 +43,6 @@ namespace BionicHand_BETA_2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form3 form3 = new Form3();
-
-            // #2. Set second form's size
-            form3.Width = this.Width;
-            form3.Height = this.Height;
-
-            // #3. Set second form's start position as same as parent form
-            form3.StartPosition = FormStartPosition.Manual;
-            form3.Location = new Point(this.Location.X, this.Location.Y);
-
-            // #4. Set parent form's visible to false
-            this.Visible = false;
-
-            // #5. Open second dialog
-            form3.ShowDialog();
-
-            // #6. Set parent form's visible to true
-            this.Visible = true;
-        }
 
         private void comboBox_COMPORT_DropDown(object sender, EventArgs e)
         {
@@ -116,8 +99,15 @@ namespace BionicHand_BETA_2
 
         public void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            serialDataIn = serialPort1.ReadLine();
-            this.BeginInvoke(new EventHandler(ProcessData));
+            if (serialPort1.ReadLine().Length == 8)
+            {
+                serialDataIn = serialPort1.ReadLine();
+                this.BeginInvoke(new EventHandler(ProcessData));
+            }
+            else
+            {
+                serialDataIn = "50A50B50C50D";
+            }
         }
 
         public void ProcessData(object sender, EventArgs e)
@@ -136,7 +126,17 @@ namespace BionicHand_BETA_2
                 dataSensor4 = serialDataIn.Substring(indexofC + 1, (indexofD - indexofC) - 1);
                 dataSensor5 = serialDataIn.Substring(indexofD + 1, (indexofE - indexofD) - 1);
 
+                textBox_sensor1.Text = dataSensor1;
+                textBox_sensor2.Text = dataSensor2;
+                textBox_sensor3.Text = dataSensor3;
+                textBox_sensor4.Text = dataSensor4;
+                textBox_sensor5.Text = dataSensor5;
 
+                //verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
+                //verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
+                //verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
+                //verticalProgressBar4_sensor4.Value = Convert.ToInt16(dataSensor4);
+                //verticalProgressBar5_sensor5.Value = Convert.ToInt16(dataSensor5);
             }
             catch (Exception error)
             {
