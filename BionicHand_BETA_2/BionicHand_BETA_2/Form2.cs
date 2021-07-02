@@ -18,8 +18,8 @@ namespace BionicHand_BETA_2
     public partial class Form2 : Form
     {
         string serialDataIn = "0A0B0C0D";
-        sbyte indexofA = 1, indexofB = 1, indexofC = 1, indexofD = 1;
-        string dataSensor1 = "1", dataSensor2 = "1", dataSensor3 = "1", dataSensor4 = "1";
+        sbyte indexofA = 1, indexofB = 1, indexofC = 1, indexofD = 1, indexofE = 1;
+        string dataSensor1 = "1", dataSensor2 = "1", dataSensor3 = "1", dataSensor4 = "1", dataSensor5 = "1";
         public Form2()
         {
             InitializeComponent();
@@ -99,8 +99,15 @@ namespace BionicHand_BETA_2
 
         public void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
+            if (serialPort1.ReadLine().Length == 8)
+            {
                 serialDataIn = serialPort1.ReadLine();
                 this.BeginInvoke(new EventHandler(ProcessData));
+            }
+            else
+            {
+                serialDataIn = "50A50B50C50D";
+            }
         }
 
         public void ProcessData(object sender, EventArgs e)
@@ -111,22 +118,25 @@ namespace BionicHand_BETA_2
                 indexofB = Convert.ToSByte(serialDataIn.IndexOf("B"));
                 indexofC = Convert.ToSByte(serialDataIn.IndexOf("C"));
                 indexofD = Convert.ToSByte(serialDataIn.IndexOf("D"));
+                indexofE = Convert.ToSByte(serialDataIn.IndexOf("E"));
 
                 dataSensor1 = serialDataIn.Substring(0, indexofA);
                 dataSensor2 = serialDataIn.Substring(indexofA +1, (indexofB - indexofA)-1);
                 dataSensor3 = serialDataIn.Substring(indexofB + 1, (indexofC - indexofB) - 1);
                 dataSensor4 = serialDataIn.Substring(indexofC + 1, (indexofD - indexofC) - 1);
+                dataSensor5 = serialDataIn.Substring(indexofD + 1, (indexofE - indexofD) - 1);
 
                 textBox_sensor1.Text = dataSensor1;
                 textBox_sensor2.Text = dataSensor2;
                 textBox_sensor3.Text = dataSensor3;
                 textBox_sensor4.Text = dataSensor4;
+                textBox_sensor5.Text = dataSensor5;
 
-                verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
-                verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
-                verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
-                verticalProgressBar4_sensor4.Value = Convert.ToInt16(dataSensor4);
-
+                //verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
+                //verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
+                //verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
+                //verticalProgressBar4_sensor4.Value = Convert.ToInt16(dataSensor4);
+                //verticalProgressBar5_sensor5.Value = Convert.ToInt16(dataSensor5);
             }
             catch (Exception error)
             {
