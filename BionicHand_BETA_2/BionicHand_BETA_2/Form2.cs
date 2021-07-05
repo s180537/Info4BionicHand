@@ -20,6 +20,7 @@ namespace BionicHand_BETA_2
         string serialDataIn = "0A0B0C0D";
         sbyte indexofA = 1, indexofB = 1, indexofC = 1, indexofD = 1;
         string dataSensor1 = "1", dataSensor2 = "1", dataSensor3 = "1", dataSensor4 = "1";
+        double dataSensorDeg1 = 1, dataSensorDeg2 = 1, dataSensorDeg3 = 1, dataSensorDeg4 = 1;
         public Form2()
         {
             InitializeComponent();
@@ -120,15 +121,17 @@ namespace BionicHand_BETA_2
                 indexofD = Convert.ToSByte(serialDataIn.IndexOf("D"));
 
                 dataSensor1 = serialDataIn.Substring(0, indexofA);
-                dataSensor2 = serialDataIn.Substring(indexofA +1, (indexofB - indexofA)-1);
+                dataSensor2 = serialDataIn.Substring(indexofA + 1, (indexofB - indexofA)-1);
                 dataSensor3 = serialDataIn.Substring(indexofB + 1, (indexofC - indexofB) - 1);
                 dataSensor4 = serialDataIn.Substring(indexofC + 1, (indexofD - indexofC) - 1);
 
-                textBox_sensor1.Text = dataSensor1;
-                textBox_sensor2.Text = dataSensor2;
-                textBox_sensor3.Text = dataSensor3;
-                textBox_sensor4.Text = dataSensor4;
-                
+                dataSensorDeg1 = Convert.ToInt16(dataSensor1) / (1023 / 180);
+
+                textBox_sensor1.Text = Convert.ToString(dataSensorDeg1);
+                textBox_sensor1.Text = Convert.ToString(dataSensorDeg2);
+                textBox_sensor1.Text = Convert.ToString(dataSensorDeg3);
+                textBox_sensor1.Text = Convert.ToString(dataSensorDeg4);
+
                 verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
                 verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
                 verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
