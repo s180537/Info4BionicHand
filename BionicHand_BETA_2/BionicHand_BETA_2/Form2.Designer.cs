@@ -210,18 +210,18 @@ namespace BionicHand_BETA_2
             // 
             // verticalProgressBar4_sensor4
             // 
-            this.verticalProgressBar4_sensor4.Location = new System.Drawing.Point(715, 115);
+            this.verticalProgressBar4_sensor4.Location = new System.Drawing.Point(715, 64);
             this.verticalProgressBar4_sensor4.Maximum = 1023;
             this.verticalProgressBar4_sensor4.Name = "verticalProgressBar4_sensor4";
-            this.verticalProgressBar4_sensor4.Size = new System.Drawing.Size(36, 146);
+            this.verticalProgressBar4_sensor4.Size = new System.Drawing.Size(36, 197);
             this.verticalProgressBar4_sensor4.TabIndex = 18;
             // 
             // verticalProgressBar3_sensor3
             // 
-            this.verticalProgressBar3_sensor3.Location = new System.Drawing.Point(570, 76);
+            this.verticalProgressBar3_sensor3.Location = new System.Drawing.Point(570, 64);
             this.verticalProgressBar3_sensor3.Maximum = 1023;
             this.verticalProgressBar3_sensor3.Name = "verticalProgressBar3_sensor3";
-            this.verticalProgressBar3_sensor3.Size = new System.Drawing.Size(36, 185);
+            this.verticalProgressBar3_sensor3.Size = new System.Drawing.Size(36, 197);
             this.verticalProgressBar3_sensor3.TabIndex = 17;
             // 
             // verticalProgressBar2_sensor2
@@ -234,10 +234,10 @@ namespace BionicHand_BETA_2
             // 
             // verticalProgressBar1_sensor1
             // 
-            this.verticalProgressBar1_sensor1.Location = new System.Drawing.Point(278, 89);
+            this.verticalProgressBar1_sensor1.Location = new System.Drawing.Point(278, 64);
             this.verticalProgressBar1_sensor1.Maximum = 1023;
             this.verticalProgressBar1_sensor1.Name = "verticalProgressBar1_sensor1";
-            this.verticalProgressBar1_sensor1.Size = new System.Drawing.Size(36, 172);
+            this.verticalProgressBar1_sensor1.Size = new System.Drawing.Size(36, 197);
             this.verticalProgressBar1_sensor1.TabIndex = 15;
             // 
             // Form2
