@@ -1,3 +1,4 @@
+
 ﻿
 namespace BionicHand_BETA_2
 {
@@ -91,4 +92,6 @@ namespace BionicHand_BETA_2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
     }
+
+
 }

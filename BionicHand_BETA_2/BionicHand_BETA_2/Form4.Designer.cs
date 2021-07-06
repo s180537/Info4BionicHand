@@ -1,3 +1,4 @@
+
 ﻿
 namespace BionicHand_BETA_2
 {
@@ -79,4 +80,5 @@ namespace BionicHand_BETA_2
         private System.Windows.Forms.Label label1;
         private System.IO.Ports.SerialPort serialPort1;
     }
+
 }
