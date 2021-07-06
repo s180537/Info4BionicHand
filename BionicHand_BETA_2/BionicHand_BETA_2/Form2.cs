@@ -126,6 +126,10 @@ namespace BionicHand_BETA_2
                 dataSensor4 = serialDataIn.Substring(indexofC + 1, (indexofD - indexofC) - 1);
 
                 dataSensorDeg1 = Convert.ToInt16(dataSensor1) / (1023 / 180);
+                dataSensorDeg2 = Convert.ToInt16(dataSensor2) / (1023 / 180);
+                dataSensorDeg3 = Convert.ToInt16(dataSensor3) / (1023 / 180);
+                dataSensorDeg4 = Convert.ToInt16(dataSensor4) / (1023 / 180);
+
 
                 textBox_sensor1.Text = Convert.ToString(dataSensorDeg1);
                 textBox_sensor1.Text = Convert.ToString(dataSensorDeg2);
