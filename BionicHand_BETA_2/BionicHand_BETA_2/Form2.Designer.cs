@@ -152,15 +152,11 @@ namespace BionicHand_BETA_2
             // 
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
-
-
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(620, 273);
-
+            this.label5.Location = new System.Drawing.Point(726, 270);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 18);
             this.label5.TabIndex = 28;
@@ -169,10 +165,8 @@ namespace BionicHand_BETA_2
             // label1
             // 
             this.label1.AutoSize = true;
-
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(420, 272);
-
+            this.label1.Location = new System.Drawing.Point(526, 269);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 18);
             this.label1.TabIndex = 27;
@@ -181,10 +175,8 @@ namespace BionicHand_BETA_2
             // label2
             // 
             this.label2.AutoSize = true;
-
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(220, 272);
-
+            this.label2.Location = new System.Drawing.Point(326, 269);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 18);
             this.label2.TabIndex = 26;
@@ -193,58 +185,44 @@ namespace BionicHand_BETA_2
             // label7
             // 
             this.label7.AutoSize = true;
-
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 270);
-
+            this.label7.Location = new System.Drawing.Point(126, 267);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 18);
             this.label7.TabIndex = 25;
             this.label7.Text = "Sensor1";
             // 
-
-            // 
             // textBox_sensor4
             // 
-            this.textBox_sensor4.Location = new System.Drawing.Point(697, 274);
-
+            this.textBox_sensor4.Location = new System.Drawing.Point(803, 271);
             this.textBox_sensor4.Name = "textBox_sensor4";
             this.textBox_sensor4.Size = new System.Drawing.Size(36, 20);
             this.textBox_sensor4.TabIndex = 23;
             // 
             // textBox_sensor3
             // 
-
-            this.textBox_sensor3.Location = new System.Drawing.Point(497, 271);
-
+            this.textBox_sensor3.Location = new System.Drawing.Point(603, 268);
             this.textBox_sensor3.Name = "textBox_sensor3";
             this.textBox_sensor3.Size = new System.Drawing.Size(36, 20);
             this.textBox_sensor3.TabIndex = 22;
             // 
             // textBox_sensor2
             // 
-
-            this.textBox_sensor2.Location = new System.Drawing.Point(297, 270);
-
+            this.textBox_sensor2.Location = new System.Drawing.Point(403, 267);
             this.textBox_sensor2.Name = "textBox_sensor2";
             this.textBox_sensor2.Size = new System.Drawing.Size(36, 20);
             this.textBox_sensor2.TabIndex = 21;
             // 
             // textBox_sensor1
             // 
-
-            this.textBox_sensor1.Location = new System.Drawing.Point(97, 268);
-
+            this.textBox_sensor1.Location = new System.Drawing.Point(203, 265);
             this.textBox_sensor1.Name = "textBox_sensor1";
             this.textBox_sensor1.Size = new System.Drawing.Size(36, 20);
             this.textBox_sensor1.TabIndex = 20;
             // 
-
-            // 
             // verticalProgressBar4_sensor4
             // 
-            this.verticalProgressBar4_sensor4.Location = new System.Drawing.Point(697, 65);
-
+            this.verticalProgressBar4_sensor4.Location = new System.Drawing.Point(803, 62);
             this.verticalProgressBar4_sensor4.Maximum = 1023;
             this.verticalProgressBar4_sensor4.Name = "verticalProgressBar4_sensor4";
             this.verticalProgressBar4_sensor4.Size = new System.Drawing.Size(36, 197);
@@ -252,9 +230,7 @@ namespace BionicHand_BETA_2
             // 
             // verticalProgressBar3_sensor3
             // 
-
-            this.verticalProgressBar3_sensor3.Location = new System.Drawing.Point(497, 65);
-
+            this.verticalProgressBar3_sensor3.Location = new System.Drawing.Point(603, 62);
             this.verticalProgressBar3_sensor3.Maximum = 1023;
             this.verticalProgressBar3_sensor3.Name = "verticalProgressBar3_sensor3";
             this.verticalProgressBar3_sensor3.Size = new System.Drawing.Size(36, 197);
@@ -262,9 +238,7 @@ namespace BionicHand_BETA_2
             // 
             // verticalProgressBar2_sensor2
             // 
-
-            this.verticalProgressBar2_sensor2.Location = new System.Drawing.Point(297, 65);
-
+            this.verticalProgressBar2_sensor2.Location = new System.Drawing.Point(403, 62);
             this.verticalProgressBar2_sensor2.Maximum = 1023;
             this.verticalProgressBar2_sensor2.Name = "verticalProgressBar2_sensor2";
             this.verticalProgressBar2_sensor2.Size = new System.Drawing.Size(36, 197);
@@ -272,9 +246,7 @@ namespace BionicHand_BETA_2
             // 
             // verticalProgressBar1_sensor1
             // 
-
-            this.verticalProgressBar1_sensor1.Location = new System.Drawing.Point(97, 65);
-
+            this.verticalProgressBar1_sensor1.Location = new System.Drawing.Point(203, 62);
             this.verticalProgressBar1_sensor1.Maximum = 1023;
             this.verticalProgressBar1_sensor1.Name = "verticalProgressBar1_sensor1";
             this.verticalProgressBar1_sensor1.Size = new System.Drawing.Size(36, 197);
