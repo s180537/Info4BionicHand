@@ -153,15 +153,7 @@ namespace BionicHand_BETA_2
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(820, 273);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 18);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Sensor5";
+
             // 
             // label5
             // 
@@ -211,12 +203,6 @@ namespace BionicHand_BETA_2
             this.label7.Text = "Sensor1";
             // 
 
-            // textBox_sensor5
-            // 
-            this.textBox_sensor5.Location = new System.Drawing.Point(897, 271);
-            this.textBox_sensor5.Name = "textBox_sensor5";
-            this.textBox_sensor5.Size = new System.Drawing.Size(36, 20);
-            this.textBox_sensor5.TabIndex = 24;
             // 
             // textBox_sensor4
             // 
@@ -254,13 +240,6 @@ namespace BionicHand_BETA_2
             this.textBox_sensor1.TabIndex = 20;
             // 
 
-            // verticalProgressBar5_sensor5
-            // 
-            this.verticalProgressBar5_sensor5.Location = new System.Drawing.Point(897, 65);
-            this.verticalProgressBar5_sensor5.Maximum = 1023;
-            this.verticalProgressBar5_sensor5.Name = "verticalProgressBar5_sensor5";
-            this.verticalProgressBar5_sensor5.Size = new System.Drawing.Size(36, 197);
-            this.verticalProgressBar5_sensor5.TabIndex = 19;
             // 
             // verticalProgressBar4_sensor4
             // 
