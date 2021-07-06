@@ -20,7 +20,7 @@ namespace BionicHand_BETA_2
         string serialDataIn = "0A0B0C0D";
         sbyte indexofA = 1, indexofB = 1, indexofC = 1, indexofD = 1;
         string dataSensor1 = "1", dataSensor2 = "1", dataSensor3 = "1", dataSensor4 = "1";
-        double dataSensorDeg1 = 1, dataSensorDeg2 = 1, dataSensorDeg3 = 1, dataSensorDeg4 = 1;
+        double dataSensorDeg1 = 50, dataSensorDeg2 = 1, dataSensorDeg3 = 1, dataSensorDeg4 = 1;
         public Form2()
         {
             InitializeComponent();
@@ -99,10 +99,13 @@ namespace BionicHand_BETA_2
         }
 
         public void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
-        { 
+        
+            {
                 serialDataIn = serialPort1.ReadLine();
                 this.BeginInvoke(new EventHandler(ProcessData));
-        }
+            }
+            
+        
 
         public void ProcessData(object sender, EventArgs e)
         {
@@ -118,13 +121,9 @@ namespace BionicHand_BETA_2
                 dataSensor3 = serialDataIn.Substring(indexofB + 1, (indexofC - indexofB) - 1);
                 dataSensor4 = serialDataIn.Substring(indexofC + 1, (indexofD - indexofC) - 1);
 
-                dataSensorDeg1 = Convert.ToInt16(dataSensor1) / (1023 / 180);
-                dataSensorDeg2 = Convert.ToInt16(dataSensor2) / (1023 / 180);
-                dataSensorDeg3 = Convert.ToInt16(dataSensor3) / (1023 / 180);
-                dataSensorDeg4 = Convert.ToInt16(dataSensor4) / (1023 / 180);
+                dataSensorDeg1 = Convert.ToDouble(dataSensor1) / (1023 / 180);
 
-
-                textBox_sensor1.Text = Convert.ToString(dataSensorDeg1);
+                textBox_sensor1.Text =Convert.ToString(dataSensorDeg1);
                 textBox_sensor2.Text = Convert.ToString(dataSensorDeg2);
                 textBox_sensor3.Text = Convert.ToString(dataSensorDeg3);
                 textBox_sensor4.Text = Convert.ToString(dataSensorDeg4);
