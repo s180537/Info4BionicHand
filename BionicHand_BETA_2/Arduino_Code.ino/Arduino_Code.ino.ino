@@ -22,7 +22,7 @@ void loop() {
     dataSensor4 = analogRead(A3);
     
 
-    Serial.print((String)dataSensor1 + "A" + dataSensor2 + "B" + dataSensor3 + "C" + dataSensor4 + "D"  + "\n");
+    Serial.print((String) dataSensor1 + "A" + dataSensor2 + "B" + dataSensor3 + "C" + dataSensor4 + "D"  + "\n");
 
     delay(100);
 }
