@@ -1,3 +1,4 @@
+
 ﻿
 namespace BionicHand_BETA_2
 {
@@ -48,11 +49,12 @@ namespace BionicHand_BETA_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(367, 411);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 46);
+            this.label1.Size = new System.Drawing.Size(282, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Visualisierung";
             // 
@@ -60,7 +62,7 @@ namespace BionicHand_BETA_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1004, 481);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -78,4 +80,5 @@ namespace BionicHand_BETA_2
         private System.Windows.Forms.Label label1;
         private System.IO.Ports.SerialPort serialPort1;
     }
+
 }
