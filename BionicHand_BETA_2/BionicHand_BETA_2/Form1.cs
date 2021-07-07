@@ -47,7 +47,7 @@ namespace BionicHand_BETA_2
             form2.ShowDialog();
 
             // #6. Set parent form's visible to true
-            this.Visible = true;
+            this.Close();
         }
     }
 }
