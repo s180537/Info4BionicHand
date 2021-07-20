@@ -123,8 +123,8 @@ namespace BionicHand_BETA_2
 
                 dataSensorDeg1 = Convert.ToDouble(dataSensor1) / (1023 / 180);
                 dataSensorDeg2 = Convert.ToDouble(dataSensor2) / (1023 / 180);
-                dataSensorDeg3 = Convert.ToDouble(dataSensor3) / (1023 / 180);
-                dataSensorDeg4 = Convert.ToDouble(dataSensor4) / (1023 / 180);
+                dataSensorDeg3 = 205 - Convert.ToDouble(dataSensor3) / (1023 / 180);
+                dataSensorDeg4 = 205 - Convert.ToDouble(dataSensor4) / (1023 / 180); 
 
                 textBox_sensor1.Text = Convert.ToString(dataSensorDeg1);
                 textBox_sensor2.Text = Convert.ToString(dataSensorDeg2);
@@ -133,8 +133,8 @@ namespace BionicHand_BETA_2
 
                 verticalProgressBar1_sensor1.Value = Convert.ToInt16(dataSensor1);
                 verticalProgressBar2_sensor2.Value = Convert.ToInt16(dataSensor2);
-                verticalProgressBar3_sensor3.Value = Convert.ToInt16(dataSensor3);
-                verticalProgressBar4_sensor4.Value = Convert.ToInt16(dataSensor4);
+                verticalProgressBar3_sensor3.Value = 1023 - Convert.ToInt16(dataSensor3);
+                verticalProgressBar4_sensor4.Value = 1023 - Convert.ToInt16(dataSensor4);
 
             }
             catch (Exception error)
